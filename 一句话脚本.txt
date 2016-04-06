@@ -1,0 +1,10 @@
+NO.1 刚刚想的点子  把一些平常用的一句话脚本记录下来 以后用着也方便
+
+1> for file in `ls`;
+	do
+		echo $c;
+		mv $file apk$c.apk;
+		c=$(($c + 1));
+		echo $file;
+	done
+#这句shell能做到将当前目录下的所有apk批量重命名，，不过shell还有待研究 c=(($c + 1))不懂为什么需要两个括号
