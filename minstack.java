@@ -1,4 +1,7 @@
-package minstack;
+/*Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+it's an algorithm problem from the leetcode 155.
+and here is the blog about this problem.
+*/
 
 import java.util.Random;
 
@@ -32,7 +35,7 @@ public class minstack {
 		}
         return 0;
     }
-	class entry {//Ã¿¸öÕ»ÔªËØµÄÀà£¬¾ßÓĞ3¸öÊôĞÔ £ºmin×îĞ¡Öµ¡¢numÕ»ÔªËØËù´æµÄÊıÖµ¡¢next Õ»¶¥µÚ¶ş¸öÔªËØµÄ¶ÔÏóË÷Òı¡£
+	class entry {//æ¯ä¸ªæ ˆå…ƒç´ çš„ç±»ï¼Œå…·æœ‰3ä¸ªå±æ€§ ï¼šminæœ€å°å€¼ã€numæ ˆå…ƒç´ æ‰€å­˜çš„æ•°å€¼ã€next æ ˆé¡¶ç¬¬äºŒä¸ªå…ƒç´ çš„å¯¹è±¡ç´¢å¼•ã€‚
 		private int min; 
  		private int num=-1;
 		public entry next=null;
@@ -45,7 +48,7 @@ public class minstack {
 			}
 			else{
 				this.min=num;
-			}//´Ë´¦½øĞĞ
+			}//æ­¤å¤„è¿›è¡Œ
 		}
 		public entry(){
 			
